@@ -25,8 +25,8 @@ public class VehiculoRepositoryImpl implements IVehiculoRepository {
 		
 		v.setMarca("Mazda");
 		v.setPlaca(placa);
-		v.setPrecio(new BigDecimal(r.nextInt(10000)));
-		String [] tipos = {"liviano","pesado"};
+		v.setPrecio(new BigDecimal(r.nextInt(25000)));
+		String [] tipos = {"L","P"};
 		v.setTipo(tipos[r.nextInt(2)]);
 		return v;
 	}
